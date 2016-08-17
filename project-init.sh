@@ -15,13 +15,3 @@ command -v cmake >/dev/null 2>&1 || {
 	fi
 	
 }
-
-#install google-test
-mkdir -p lib
-
-wget https://github.com/google/googletest/archive/master.zip
-
-unzip master.zip -d lib
-
-#cleanup
-rm master.zip
