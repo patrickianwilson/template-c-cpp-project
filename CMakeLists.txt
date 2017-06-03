@@ -17,7 +17,7 @@ set(PROJECT_TEST_NAME ${PROJECT_NAME}_tests)
 #define a glob for all the test files.
 #dictate that all tests are in files name *_test.cpp
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/src/*_test.cpp)
-add_executable(${PROJECT_TEST_NAME} ${TEST_SRC_FILES})
+add_executable(${PROJECT_TEST_NAME} ${TEST_SRC_FILES} ${SOURCE_FILES})
 
 target_link_libraries(${PROJECT_TEST_NAME} gtest gtest_main)
 add_test(NAME all_tests COMMAND ${PROJECT_TEST_NAME})
