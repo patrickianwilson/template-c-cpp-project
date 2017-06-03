@@ -5,5 +5,5 @@
 #include "gtest/gtest.h"
 
 TEST(suite_name, test_name) {
-    EXPECT_EQUAL(true, true);
+    EXPECT_EQ(true, true) << "Assertion Message";
 }
